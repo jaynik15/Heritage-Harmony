@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Number Animation</title>
+
+
+
+</head>
+<body>
+    <script>
+        // Function to animate number increase
+        function animateValue1(id, start, end, duration) {
+            var range = end - start;
+            var current = start;
+            var increment = end > start ? 1 : -1;
+            var stepTime = Math.abs(Math.floor(duration / range));
+            var obj = document.getElementById(id);
+            var timer = setInterval(function() {
+                current += increment;
+                obj.innerHTML = current;
+                if (current == end) {
+                    clearInterval(timer);
+                }
+            }, stepTime);
+    
+            animateValue2('count2',0,34,2000) 
+        }
+    
+        function animateValue2(id, start, end, duration) {
+            var range = end - start;
+            var current = start;
+            var increment = end > start ? 1 : -1;
+            var stepTime = Math.abs(Math.floor(duration / range));
+            var obj = document.getElementById(id);
+            var timer = setInterval(function() {
+                current += increment;
+                obj.innerHTML = current;
+                if (current == end) {
+                    clearInterval(timer);
+                }
+            }, stepTime);
+    
+            animateValue3('count3',0,7,2000)
+        }
+    
+        function animateValue3(id, start, end, duration) {
+            var range = end - start;
+            var current = start;
+            var increment = end > start ? 1 : -1;
+            var stepTime = Math.abs(Math.floor(duration / range));
+            var obj = document.getElementById(id);
+            var timer = setInterval(function() {
+                current += increment;
+                obj.innerHTML = current;
+                if (current == end) {
+                    clearInterval(timer);
+                }
+            }, stepTime);
+    
+            animateValue4('count4',0,1,2000)
+        }
+    
+        function animateValue4(id, start, end, duration) {
+            var range = end - start;
+            var current = start;
+            var increment = end > start ? 1 : -1;
+            var stepTime = Math.abs(Math.floor(duration / range));
+            var obj = document.getElementById(id);
+            var timer = setInterval(function() {
+                current += increment;
+                obj.innerHTML = current;
+                if (current == end) {
+                    clearInterval(timer);
+                }
+            }, stepTime);
+    
+            
+        }
+    
+        // Call the function to animate the number
+       // Change the parameters as per your requirement
+    </script>
+
+    <style>
+        .number {
+        font-size: 100px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: rgb(215, 9, 9);
+        transition: all 1s ease; /* Transition effect for smoother animation */
+        box-shadow: 5px;
+        height: 100px;
+        width: 100px;
+        }
+
+        .number_div{
+            padding: auto;
+            top: 50%;
+            left: 30%;
+            position: relative;
+            justify-content: center;
+            border: 3px solid darkmagenta;
+            border-radius: 10px;
+            height: 100%;
+            width: 40%;
+            align-items: center;
+            background-image: url('Design_1.png') ;
+            z-index: 2;
+        }
+        
+
+        .number_pre{
+            font-family: cursive;
+            color: rgb(142, 142, 225);
+            font-size: large;
+            font-weight: bold;
+            z-index: 1;
+            opacity: 1;
+        }
+    </style>
+
+    <div class="d-flex flex-wrap number_div" align="center"  onmouseover="animateValue1('count1',0,100,2000)">
+    <div class="number " id="count1" >
+    </div>
+    <pre class="number_pre">
+Total World Heritage
+Sites in INDIA</pre>
+    <div class="number  " id="count2">
+    </div>
+    <pre class="number_pre">
+Cultural Sites</pre>
+    <div class="number  " id="count3">
+    </div>
+    <pre class="number_pre">
+Natural Sites</pre>
+
+    <div class="number  " id="count4">
+    </div>
+
+    <pre class="number_pre">
+Mixed Sites</pre>
+
+    </div>
+
+</body>
+</html>
+
+

@@ -1,0 +1,457 @@
+<html>
+    <head>
+        <title>Heritage Harmony : Exploring the royalty of INDIA's heritage</title>
+        <link rel="icon" type="image/x-icon" href="My first design.png">
+       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+     
+    
+    <style>
+      .navbar a:hover{
+        color: whitesmoke;
+      }
+
+      @keyframes pre1animation {
+        0% { font-size: 30px; color: black;font-weight: bolder; }
+        100% { font-size: 32px; color: black;font-weight: bolder; }
+      }
+
+      .pre1 {
+        transition: all 0.5s ease;
+      }
+
+      .pre1:hover{
+        animation: pre1animation 1s forwards;
+      }
+
+      #p1{
+        text-align: right;
+        column-count: 1;
+        column-gap: 50px;
+      }
+
+      .video-container {
+        margin-top: 100px;
+        position: relative;
+        width: 100%; /* Adjust width as needed */
+        height: 100%; /* Adjust height as needed */
+        overflow: hidden;
+        
+      }
+
+      .video{
+        height: 100%;
+        width: 100%;
+      }
+
+      .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 24px;
+      }
+
+      .video-container:hover .overlay {
+        display: none;
+      }
+      
+    </style>
+    
+    
+    </head>
+    <body>
+        
+      <div class="container-fluid" style="background-color:whitesmoke;">
+        
+        <img src="p4.png" style="background-attachment: fixed;height: auto;width: 100%;" alt="Responsive Image">
+        
+    
+      <!--NAVBAR -->
+
+
+      <nav class="navbar navbar-expand-lg sticky-top" style="background-color: goldenrod;font-family: Verdana ;font-weight: bold; margin-bottom: 70px;">
+
+        <div class="container-fluid">
+        <!-- Links -->
+              
+          <a class="navbar-brand" href="#"><img src="My first design.png" height="50px" width="50px" style="border-radius: 50%;"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mynavbar">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">World Heritage Cities</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#"> Cultural Cities</a></li>
+                    <li><a class="dropdown-item" href="#"> Natural Cities</a></li>
+                    <li><a class="dropdown-item" href="#"> Mixed Type Cities</a></li>
+                  </ul>
+                  </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="D:/Project/World Heritage Cities/City_profiles.html">City Profiles</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="D:/Project/Events & Festival/Festival.html">People & Culture</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Travel Information</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#" id="Contact">Contact Us</a>
+                </li>
+              </ul>
+              </div>
+            </div>
+          
+        </nav>
+
+        <div id="Contact" class="content">
+          
+        </div>
+          <div class="container-fluid">
+            <div class="d-flex flex-wrap div1">
+              <pre class="pre1" style="padding-top: 100px;font-size: 30px;font-weight: bolder;font-family: sans-serif;">
+    World Heritage Site is designates by
+    The United Nations Educational,
+    Scientific and Cultural Organization
+    <b style="font-size: 28px;">(<u>UNESCO</u>)</b>
+              </pre>
+              <pre id="p1" style="text-align: justify;padding-left: 100px;padding-top: 100px;font-size: large;font-family: cursive;">             
+  The United Nations Educational, Scientific and Cultural Organization (UNESCO)
+  designates World Heritage Sites of outstanding universal value to cultural or
+  natural heritage which have been nominated by countries which are signatories 
+  to the UNESCO World Heritage Convention, established in 1972
+              </pre>
+
+            </div>
+          </div>
+
+          
+          <div class="video-container" onmouseover="playVideo()" style="background-color: black;">
+            <video class="video" autoplay loop>
+              <source src="Video1.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+            <div class="overlay">
+              
+            </div>
+          </div>
+          
+          <script>
+            function playVideo() {
+              var video = document.querySelector('.video');
+              video.play();
+            }
+          </script>
+
+          <script>
+            // Function to animate number increase
+            function animateValue1(id, start, end, duration) {
+                var range = end - start;
+                var current = start;
+                var increment = end > start ? 1 : -1;
+                var stepTime = Math.abs(Math.floor(duration / range));
+                var obj = document.getElementById(id);
+                var timer = setInterval(function() {
+                    current += increment;
+                    obj.innerHTML = current;
+                    if (current == end) {
+                        clearInterval(timer);
+                    }
+                }, stepTime);
+        
+                animateValue2('count2',0,34,2000) 
+            }
+        
+            function animateValue2(id, start, end, duration) {
+                var range = end - start;
+                var current = start;
+                var increment = end > start ? 1 : -1;
+                var stepTime = Math.abs(Math.floor(duration / range));
+                var obj = document.getElementById(id);
+                var timer = setInterval(function() {
+                    current += increment;
+                    obj.innerHTML = current;
+                    if (current == end) {
+                        clearInterval(timer);
+                    }
+                }, stepTime);
+        
+                animateValue3('count3',0,7,2000)
+            }
+        
+            function animateValue3(id, start, end, duration) {
+                var range = end - start;
+                var current = start;
+                var increment = end > start ? 1 : -1;
+                var stepTime = Math.abs(Math.floor(duration / range));
+                var obj = document.getElementById(id);
+                var timer = setInterval(function() {
+                    current += increment;
+                    obj.innerHTML = current;
+                    if (current == end) {
+                        clearInterval(timer);
+                    }
+                }, stepTime);
+        
+                animateValue4('count4',0,1,2000)
+            }
+        
+            function animateValue4(id, start, end, duration) {
+                var range = end - start;
+                var current = start;
+                var increment = end > start ? 1 : -1;
+                var stepTime = Math.abs(Math.floor(duration / range));
+                var obj = document.getElementById(id);
+                var timer = setInterval(function() {
+                    current += increment;
+                    obj.innerHTML = current;
+                    if (current == end) {
+                        clearInterval(timer);
+                    }
+                }, stepTime);
+        
+                
+            }
+        
+            // Call the function to animate the number
+           // Change the parameters as per your requirement
+        </script>
+        <style>
+          .number {
+          font-size: 100px;
+          font-family: Georgia, 'Times New Roman', Times, serif;
+          color: rgb(215, 9, 9);
+          transition: all 1s ease; /* Transition effect for smoother animation */
+          box-shadow: 5px;
+          height: 100px;
+          width: 100px;
+          }
+  
+          .number_div{
+              padding: auto;
+              margin-top: 200px;
+              margin-bottom: 200px;
+              left: 30%;
+              position: relative;
+              justify-content: center;
+              border: 3px solid darkmagenta;
+              border-radius: 10px;
+              height: 850px;
+              width: 40%;
+              align-items: center;
+              background-image: url('Design_1.png') ;
+              z-index: 2;
+          }
+          
+  
+          .number_pre{
+              font-family: cursive;
+              color: rgb(142, 142, 225);
+              font-size: large;
+              font-weight: bold;
+              z-index: 1;
+              opacity: 1;
+          }
+      </style>
+
+        <div style="background-color: thistle;padding-top:5px ;padding-bottom: 5px;">      
+        <div class="flex-wrap number_div" align="center"  onmouseover="animateValue1('count1',0,42,2000)">
+          <div class="number " id="count1" >
+          </div><br><br>
+          <pre class="number_pre">
+      Total World Heritage
+      Sites in INDIA</pre>
+          <div class="number  " id="count2">
+          </div><br><br>
+          <pre class="number_pre">
+      Cultural Sites</pre>
+          <div class="number  " id="count3">
+          </div><br><br>
+          <pre class="number_pre">
+      Natural Sites</pre>
+      
+          <div class="number  " id="count4">
+          </div><br><br>
+          <pre class="number_pre">
+      Mixed Sites</pre>
+          </div>
+        </div>
+        
+
+        <style>
+          .info_div{
+            
+            margin-bottom: 100px;
+            padding-top: 100px;
+          }
+          b{
+            font-family:  Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 35px;
+            font-weight: bolder;
+            color: brown;
+          }
+          .info_div_i{
+            display: flex;
+          }
+          .box1,.box2{
+            padding-top: 50px;
+            margin-left: 150px;
+            margin-right: 150px;
+            padding-bottom: 50px;
+            flex: 1;
+            font-size: 25px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            
+          }
+          .img_tag{
+            transition: all 0.5s ease;
+          }
+          .img_tag:hover{
+            animation: imganimation 1s forwards;
+          }
+
+          @keyframes imganimation {
+            0% { width: 420px;height: auto;  }
+        100% { width: 440px;height: auto; }
+          }
+        </style>
+        <style>
+    .image-container {
+  display: flex;
+  
+}
+
+.animated-image{
+  width: 25%;
+  height: auto;
+  padding: 10px;
+}
+
+.animated-image:hover {
+  animation-duration: 2s; /* Adjust animation duration as needed */
+  animation-iteration-count: forwards; /* Make the animation repeat infinitely */
+}
+
+.animated-image.animation1:hover {
+  animation-name: zoom;
+  animation-timing-function: ease-in-out;
+}
+
+.animated-image.animation2:hover {
+  animation-name: zoom;
+  animation-timing-function: ease-in-out;
+}
+
+.animated-image.animation3:hover {
+  animation-name: zoom;
+  animation-timing-function: ease-in-out;
+}
+
+.animated-image.animation4:hover {
+  animation-name: zoom;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes zoom {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+
+  </style>
+        <div style="background-color: bisque;padding-bottom: 35px;">
+          <div class="container info_div">
+            <b> India has the sixth-most sites worldwide.</b>
+            <div class="info_div_i">
+              <div class="box1">The first sites to be listed were the Ajanta Caves, Ellora Caves, Agra Fort, and Taj Mahal, all of which were inscribed in the 1983 session of the World Heritage Committee. </div>              
+            </div>
+            <div class="d-flex flex-wrap" style="border: 5px solid brown;background-color: cornsilk;border-radius: 5px;height: auto;width: 100%;padding-left:25px;padding-right: 25px;padding-top: 25px;padding-bottom: 25px;"> 
+              <div style="padding-left: 35%;padding-right: 35%;font-family: Arial;font-size: 25px;font-weight: bolder;color: saddlebrown;">India's First Heritage Sites</div>
+              <div class="image-container">
+                <img src="D:/PROJECT/photos_Of_cities/Agra_fort.jpeg" alt="Responsive Image" class="animated-image animation1" title="AGRA FORT">
+                <img src="D:/PROJECT/photos_Of_cities/Ajanta_caves.jpg" alt="Responsive Image" class="animated-image animation2" title="AJANTA CAVE">
+                <img src="D:/PROJECT/photos_Of_cities/Ellora_caves.jpg" alt="Responsive Image" class="animated-image animation3" title="ELLORA CAVE">
+                <img src="D:/PROJECT/photos_Of_cities/Taj_mahal.jpg" alt="Responsive Image" class="animated-image animation4" title="TAJ MAHAL">
+              </div>
+            </div> 
+          </div>
+
+          
+        </div>
+
+
+        <footer>
+          <div class="footer-content" style="background-color: rgb(0, 0, 53);color: whitesmoke;padding: 35px;">
+              <h3 style="text-align: center;">  </h3>
+
+          </div>
+          <div class="footer-info" align="center" style="background-color: rgb(0, 0, 53);color: burlywood;padding: 10px;">
+              <img src="My first design.png" style="height: auto;width: 20%;">
+              <p>&copy; 2024 Heritage Harmony</p>
+          </div>
+      </footer>
+      
+      <style>
+        #scrollToTopBtn {
+  display: none; /* Hide the button by default */
+  position: fixed; /* Position the button fixed on the page */
+  bottom: 20px; /* Adjust the distance from the bottom */
+  right: 20px; /* Adjust the distance from the right */
+  z-index: 999; /* Ensure the button stays above other content */
+  background-color: black; /* Button background color */
+  opacity: 0.5;
+  color: white; /* Button text color */
+  border: none; /* Remove button border */
+  border-radius: 50%; /* Round button shape */
+  width: 35px; /* Button width */
+  height: 35px; /* Button height */
+  font-size: 1.2em; /* Button text size */
+  cursor: pointer; /* Show pointer cursor on hover */
+}
+
+#scrollToTopBtn:hover {
+  background-color: crimson;
+  opacity: 1;
+}
+
+      </style>
+      <script>
+        window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+    document.getElementById("scrollToTopBtn").style.display = "block";
+  } else {
+    document.getElementById("scrollToTopBtn").style.display = "none";
+  }
+}
+
+function scrollToTop() {
+  document.body.scrollTop = 0; /* For Safari */
+  
+}
+
+      </script>
+      <button id="scrollToTopBtn" onclick="scrollToTop()">&#8593;</button>
+
+          
+    </body>
+</html>

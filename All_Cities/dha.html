@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #id1 {
+            height: 120px;
+            width: 120px;
+            background-color: red;
+            border-radius: 50%;
+            position: absolute;
+        }
+        
+        #id2 {
+            height: 125px;
+            width: 125px;
+            background-color: rgb(64, 59, 136);
+            border-radius: 50%;
+            animation-name: rotateAnimation; /* Specify the name of the animation */
+            animation-duration: 4s; /* Duration of the animation */
+            animation-iteration-count: infinite; /* Infinite rotation */
+            animation-timing-function: linear; /* Linear timing function */
+        }
+
+        /* Define the keyframes for the rotation */
+        @keyframes rotateAnimation {
+            from {
+                transform: translate(-10%,-10%); /* Start rotation from 0 degrees */
+            }
+            to {
+                transform: translate(10%,10%); /* Rotate to 360 degrees */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div id="id1"></div>
+        <div id="id2"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.image-container {
+  position: relative;
+  margin: 10px; /* Adjust margin as needed */
+  display: inline-block; /* Display images in a row */
+  width: calc(50% - 20px); /* Set width for two images */
+}
+
+.image-container img {
+  width: 200px; /* Ensure the image fills its container */
+  height: 200px; /* Maintain aspect ratio */
+  border-radius: 10px; /* Apply rounded corners to the image */
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust the color and opacity of the overlay */
+  border-radius: 10px; /* Apply rounded corners to the overlay */
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.overlay pre {
+  color: white; /* Set text color */
+  font-family: fantasy;
+  text-align: center; /* Center text horizontally */
+}
+
+.image-container:hover .overlay {
+  opacity: 1; /* Make the overlay visible on hover */
+}
+
+
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="d-flex flex-wrap div1">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="image-container">
+                        <img src="Agra_Fort.JPG" alt="Agra Fort">
+                        <div class="overlay">
+                            <pre>AGRA FORT</pre>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="image-container">
+                        <img src="Ajanta_cave.jpeg" alt="Ajanta Caves">
+                        <div class="overlay">
+                            <pre>AJANTA CAVES</pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>     
+</body>
+</html>

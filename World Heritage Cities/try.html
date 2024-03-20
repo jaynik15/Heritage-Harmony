@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Animation</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .image-container {
+  display: flex;
+}
+
+.animated-image{
+  width: 200px;
+  height: 150px;
+  padding: 5px;
+}
+
+.animated-image:hover {
+  animation-duration: 2s; /* Adjust animation duration as needed */
+  animation-iteration-count: forwards; /* Make the animation repeat infinitely */
+}
+
+.animated-image.animation1:hover {
+  animation-name: zoom;
+  animation-timing-function: ease-in-out;
+}
+
+.animated-image.animation2:hover {
+  animation-name: zoom;
+  animation-timing-function: ease-in-out;
+}
+
+.animated-image.animation3:hover {
+  animation-name: zoom;
+  animation-timing-function: ease-in-out;
+}
+
+.animated-image.animation4:hover {
+  animation-name: zoom;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes zoom {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+
+  </style>
+</head>
+<body>
+  <div class="d-flex flex-wrap" style="border: 5px solid brown;background-color: cornsilk;border-radius: 5px;height: auto;width: 420px;padding-left:25px;padding-right: 25px;padding-top: 25px;padding-bottom: 25px;">
+  <div style="background-color: crimson;color: yellow;text-align: center;font-size: large; margin-bottom: 15px;padding: 5px;">INDIA's FIRST WORLD HERITAGE SITES</div>
+  <div class="image-container">
+    <img src="D:/PROJECT/photos_Of_cities/Agra_fort.jpeg" alt="Image 1" class="animated-image animation1" title="AGRA FORT">
+    <img src="D:/PROJECT/photos_Of_cities/Ajanta_caves.jpg" alt="Image 2" class="animated-image animation2" title="AJANTA CAVE">
+  </div><br>
+  <div class="image-container">
+    <img src="D:/PROJECT/photos_Of_cities/Ellora_caves.jpg" alt="Image 3" class="animated-image animation3" title="ELLORA CAVE">
+    <img src="D:/PROJECT/photos_Of_cities/Taj_mahal.jpg" alt="Image 4" class="animated-image animation4" title="TAJ MAHAL">
+  </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
